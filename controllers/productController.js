@@ -2,7 +2,7 @@
 const connection = require("../config/db");
 //get all products
 exports.getAllGadgets = (req, res) => {
-  connection.query("SELECT * FROM gadgets", (err, rows, fields) => {
+  connection.query("SELECT * FROM pcs112-tindahan", (err, rows, fields) => {
     if (err) throw err;
     res.json(rows);
   });
@@ -22,4 +22,5 @@ exports.createProducts = (req, res) => {
     },
   );
 };
+
 
