@@ -1,1 +1,0 @@
-# tindahan-ni-shi
