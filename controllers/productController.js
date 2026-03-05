@@ -11,7 +11,7 @@ exports.getAllGadgets = (req, res) => {
 exports.createProducts = (req, res) => {
   const {itemName, unitPrice, quantity, supplier } = req.body;
   connection.query(
-    "INSERT INTO gadgets (itemName, unitPrice, quantity, supplier) VALUES (?, ?, ?, ?)",
+    "INSERT INTO pcs112-tindahan (itemName, unitPrice, quantity, supplier) VALUES (?, ?, ?, ?)",
     [itemName, unitPrice, quantity, supplier],
     (err, result) => {
       if (err) throw err;
@@ -22,5 +22,6 @@ exports.createProducts = (req, res) => {
     },
   );
 };
+
 
 
